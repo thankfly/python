@@ -9,4 +9,5 @@ for dl in rqre:
   dt = re.search('<dt>.*?</dt>',dl)
   name = re.search('<span class="name.*?</span>',dl)
   text = re.search('<dd class="text.*?</dd>',dl)
-  print "标题：" + re.search('   .*?   ',dt)
+  t = re.search('   .*?   ',dt)
+  print "标题：" + t
